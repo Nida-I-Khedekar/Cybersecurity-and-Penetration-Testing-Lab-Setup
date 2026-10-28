@@ -60,6 +60,7 @@ Configuration:
 
 <img width="1280" height="719" alt="Image" src="https://github.com/user-attachments/assets/69e94640-435a-4b7f-bad1-cd036aa5434f" />
 
+
 1.2 Install and Configure Kali Linux
 
 Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
@@ -67,7 +68,8 @@ The VM was configured to connect to the previously created NAT Network.
 
 📸 Screenshot 2: Kali Linux virtual machine
 
-<!-- INSERT KALI LINUX VM SCREENSHOT HERE -->
+<img width="1280" height="669" alt="Image" src="https://github.com/user-attachments/assets/2fcc98b7-7aa9-481d-96dd-de273a5894a4" />
+
 
 1.3 Configure Kali Linux IP Settings
 
@@ -78,17 +80,20 @@ ip addr
 
 📸 Screenshot 3: Kali Linux IP configuration
 
-<!-- INSERT KALI IP CONFIGURATION SCREENSHOT HERE -->1.4 Verify Network Connectivity
+<!-- INSERT KALI IP CONFIGURATION SCREENSHOT HERE -->
 
-Performed ping tests to verify network connectivity within the virtual lab.
 
-The ping command was used to test whether the destination could be reached over the configured network.
+1.4 Verify Network Connectivity
 
-ping <destination-ip>
+Opened the web browser to verify network connectivity.
+Successfully searched for the entered query, confirming that the internet connection was working.
 
 📸 Screenshot 4: Kali Linux connectivity test
 
-<!-- INSERT KALI PING TEST SCREENSHOT HERE -->1.5 Capture a Virtual Machine Snapshot
+<!-- INSERT KALI PING TEST SCREENSHOT HERE -->
+
+
+1.5 Capture a Virtual Machine Snapshot
 
 Captured a snapshot of the configured Kali Linux virtual machine.
 
