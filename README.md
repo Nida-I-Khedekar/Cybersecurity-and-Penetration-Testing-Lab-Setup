@@ -113,17 +113,15 @@ A snapshot provides a restoration point that can be used to return the VM to its
 <b>Step 1: Create Virtual Machine</b>
 
 Created "Android9-Lab" in VirtualBox.
-
 Allocated 2 GB RAM and a 10 GB dynamically allocated virtual disk.
-
-<img width="1280" height="673" alt="Image" src="https://github.com/user-attachments/assets/cb8a0fc5-f63f-49f3-b568-09224c54502a" />
-
-
 
 <b>Step 2: Install Android</b>
 
 Attached the Android-x86 ISO.
 Installed Android and configured the bootloader.
+
+<img width="1280" height="673" alt="Image" src="https://github.com/user-attachments/assets/cb8a0fc5-f63f-49f3-b568-09224c54502a" />
+
 
 <b>Step 3: Configure Network</b>
 
