@@ -143,7 +143,11 @@ Tested Android-to-Kali connectivity using "ping 10.0.0.2" and Verified internet 
 <img width="1280" height="679" alt="Image" src="https://github.com/user-attachments/assets/c45aa84a-6727-40a5-a2bb-f1d4d42f76c8" />
 
 
-Tested Kali-to-Android connectivity using "ping 10.0.0.9", with partial packet loss.
+Tested Kali-to-Android connectivity using "ping 10.0.0.9".
+
+<img width="1280" height="675" alt="Image" src="https://github.com/user-attachments/assets/98223088-a1a5-4922-a825-e687617959d6" />
+
+
 
 
 
