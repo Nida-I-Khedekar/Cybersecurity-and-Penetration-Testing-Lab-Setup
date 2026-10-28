@@ -57,7 +57,7 @@ VirtualBox was installed as the hypervisor.
 
 <b>Step 3. Configure the NAT Network</b>
 
-Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".
+Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".<br>
 This network provides the virtual network environment for communication between Kali Linux and Android.
 
 Configuration:
@@ -71,7 +71,7 @@ Configuration:
 
 <b>Step 4. Install and Configure Kali Linux</b>
 
-Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
+Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.<br>
 The VM was configured to connect to the previously created NAT Network.
 
 
@@ -88,7 +88,7 @@ Configured the IP settings for Kali Linux to operate within the lab network.
 
 <b>Step 6. Verify Network Connectivity</b>
 
-Opened the web browser to verify network connectivity.
+Opened the web browser to verify network connectivity.<br>
 Successfully searched for the entered query, confirming that the internet connection was working.
 
 
@@ -97,7 +97,7 @@ Successfully searched for the entered query, confirming that the internet connec
 
 <b>Step 7. Capture a Virtual Machine Snapshot</b>
 
-Captured a snapshot of the configured Kali Linux virtual machine.
+Captured a snapshot of the configured Kali Linux virtual machine.<br>
 A snapshot provides a restoration point that can be used to return the VM to its saved state when needed.
 
 
