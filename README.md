@@ -44,9 +44,9 @@ Ping| Connectivity verification
 
 ---
 
-<h4>Part 1: Kali Linux Setup and Configuration </h4>
+<h2>Part 1: Kali Linux Setup and Configuration </h2>
 
-Step 1. Install 7-Zip
+<b>Step 1. Install 7-Zip</b>
 
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.
 
@@ -102,7 +102,9 @@ Captured a snapshot of the configured Kali Linux virtual machine.
 A snapshot provides a restoration point that can be used to return the VM to its saved state when needed.
 
 
-<!-- INSERT KALI SNAPSHOT SCREENSHOT HERE -->---
+<img width="1280" height="682" alt="Image" src="https://github.com/user-attachments/assets/e7cc23da-b2ab-4eaa-9424-4e7c4f5dc9ae" />
+
+
 
 🤖 Part 2: Android VM Setup and Configuration
 
