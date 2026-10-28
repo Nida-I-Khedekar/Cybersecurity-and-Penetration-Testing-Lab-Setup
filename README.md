@@ -52,11 +52,11 @@ Ping| Connectivity verification
 
 Tool: 7-Zip
 
-Step 2. Install VirtualBox
+<b>Step 2. Install VirtualBox</b>
 
 VirtualBox was installed as the hypervisor.
 
-Step 3. Configure the NAT Network
+<b>Step 3. Configure the NAT Network</b>
 
 Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".
 This network provides the virtual network environment for communication between Kali Linux and Android.
@@ -70,7 +70,7 @@ Configuration:
 <img width="1280" height="719" alt="Image" src="https://github.com/user-attachments/assets/69e94640-435a-4b7f-bad1-cd036aa5434f" />
 
 
-Step 4. Install and Configure Kali Linux
+<b>Step 4. Install and Configure Kali Linux</b>
 
 Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
 The VM was configured to connect to the previously created NAT Network.
@@ -79,7 +79,7 @@ The VM was configured to connect to the previously created NAT Network.
 <img width="1280" height="669" alt="Image" src="https://github.com/user-attachments/assets/2fcc98b7-7aa9-481d-96dd-de273a5894a4" />
 
 
-Step 5. Configure Kali Linux IP Settings
+<b>Step 5. Configure Kali Linux IP Settings</b>
 
 Configured the IP settings for Kali Linux to operate within the lab network.
 
@@ -87,7 +87,7 @@ Configured the IP settings for Kali Linux to operate within the lab network.
 <img width="1280" height="678" alt="Image" src="https://github.com/user-attachments/assets/fb736d10-96b2-4562-b082-5034d1a5f95c" />
 
 
-Step 6. Verify Network Connectivity
+<b>Step 6. Verify Network Connectivity</b>
 
 Opened the web browser to verify network connectivity.
 Successfully searched for the entered query, confirming that the internet connection was working.
@@ -96,7 +96,7 @@ Successfully searched for the entered query, confirming that the internet connec
 <img width="1280" height="686" alt="Image" src="https://github.com/user-attachments/assets/d25eb6f3-82c2-411f-845f-22d24c9d70cc" />
 
 
-Step 7. Capture a Virtual Machine Snapshot
+<b>Step 7. Capture a Virtual Machine Snapshot</b>
 
 Captured a snapshot of the configured Kali Linux virtual machine.
 A snapshot provides a restoration point that can be used to return the VM to its saved state when needed.
@@ -106,7 +106,8 @@ A snapshot provides a restoration point that can be used to return the VM to its
 
 
 
-🤖 Part 2: Android VM Setup and Configuration
+---
+<h2>Part 2: Android VM Setup and Configuration</h2>
 
 2.1 Configure the Android VM Network
 
