@@ -44,13 +44,15 @@ Ping| Connectivity verification
 
 ---
 
-<h4> 🐉 Part 1: Kali Linux Setup and Configuration </h4>
+<h4>Part 1: Kali Linux Setup and Configuration </h4>
 
 Step 1. Install 7-Zip
+
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.
 Tool: 7-Zip
 
 Step 2. Install VirtualBox
+
 VirtualBox was installed as the hypervisor.
 
 Step 3. Configure the NAT Network
