@@ -49,6 +49,7 @@ Ping| Connectivity verification
 Step 1. Install 7-Zip
 
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.
+
 Tool: 7-Zip
 
 Step 2. Install VirtualBox
@@ -56,6 +57,7 @@ Step 2. Install VirtualBox
 VirtualBox was installed as the hypervisor.
 
 Step 3. Configure the NAT Network
+
 Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".
 This network provides the virtual network environment for communication between Kali Linux and Android.
 
