@@ -131,6 +131,11 @@ Used the subnet "10.0.0.0/24".
 
 Set the Android IP address to "10.0.0.9".
 
+
+<img width="1280" height="672" alt="Image" src="https://github.com/user-attachments/assets/c711d968-ad64-4ccc-a49a-18ca58732369" />
+
+
+
 <b>Step 5: Verify Connectivity</b>
 
 Tested Android-to-Kali connectivity using "ping 10.0.0.2".
