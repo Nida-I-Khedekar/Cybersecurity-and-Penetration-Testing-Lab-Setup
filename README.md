@@ -251,7 +251,7 @@ This project is intended for educational purposes and authorised lab environment
 - "Oracle VirtualBox" (https://www.virtualbox.org/)
 - "Kali Linux" (https://www.kali.org/)
 - "Android-x86" (https://www.android-x86.org/)
-- "Wireshark" (https://www.wireshark.org/](https://networkwalks.com/wireshark/)
+- "Wireshark" (https://networkwalks.com/wireshark/)
 
 ---
 
