@@ -175,11 +175,13 @@ Investigate captured traffic for patterns consistent with repeated authenticatio
 Objective:<br>
 Inspect captured VoIP traffic to understand the protocols and packet flow associated with voice communication.
 
+
+
 <img width="1280" height="1280" alt="Image" src="https://github.com/user-attachments/assets/05b3310d-92c2-415e-9720-db5437b54cfe" />
 
 
 
-📚 Key Learnings
+<h2>Key Learnings</h2>
 
 Through this project, I gained practical experience in:
 
