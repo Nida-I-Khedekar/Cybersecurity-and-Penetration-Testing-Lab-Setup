@@ -138,10 +138,9 @@ Set the Android IP address to "10.0.0.9".
 
 <b>Step 5: Verify Connectivity</b>
 
-Tested Android-to-Kali connectivity using "ping 10.0.0.2".
+Tested Android-to-Kali connectivity using "ping 10.0.0.2" and Verified internet access using "ping 8.8.8.8".
 
-
-Verified internet access using "ping 8.8.8.8".
+<img width="1280" height="679" alt="Image" src="https://github.com/user-attachments/assets/c45aa84a-6727-40a5-a2bb-f1d4d42f76c8" />
 
 
 Tested Kali-to-Android connectivity using "ping 10.0.0.9", with partial packet loss.
