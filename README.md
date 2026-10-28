@@ -61,7 +61,8 @@ Configuration:
 
 📸 Screenshot 1: NAT Network configuration
 
-<!-- INSERT NAT NETWORK CONFIGURATION SCREENSHOT HERE -->1.2 Install and Configure Kali Linux
+<!-- INSERT NAT NETWORK CONFIGURATION SCREENSHOT HERE -->
+1.2 Install and Configure Kali Linux
 
 Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
 
