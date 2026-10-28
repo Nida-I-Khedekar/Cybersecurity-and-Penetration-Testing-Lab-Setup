@@ -18,9 +18,7 @@ A hands-on cybersecurity project involving virtual machine configuration, networ
 📖 Project Overview
 
 This project focuses on setting up a virtual cybersecurity lab using Oracle VirtualBox, configuring Kali Linux and Android virtual machines, and performing network connectivity tests.
-
 The lab uses a NAT Network configured with the subnet "10.0.0.0/24". Kali Linux and Android are configured to communicate over this network, with Android assigned the static IP address "10.0.0.9".
-
 The project also includes six practical Wireshark exercises covering IP address identification, TCP stream analysis, HTTP plain-text credentials, brute-force activity, and VoIP traffic.
 
 🎯 Objectives
@@ -51,7 +49,6 @@ Ping| Connectivity verification
 1.1 Configure the NAT Network
 
 Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".
-
 This network provides the virtual network environment for communication between Kali Linux and Android.
 
 Configuration:
@@ -62,18 +59,19 @@ Configuration:
 📸 Screenshot 1: NAT Network configuration
 
 <img width="1280" height="719" alt="Image" src="https://github.com/user-attachments/assets/69e94640-435a-4b7f-bad1-cd036aa5434f" />
+
 1.2 Install and Configure Kali Linux
 
 Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
-
 The VM was configured to connect to the previously created NAT Network.
 
 📸 Screenshot 2: Kali Linux virtual machine
 
-<!-- INSERT KALI LINUX VM SCREENSHOT HERE -->1.3 Configure Kali Linux IP Settings
+<!-- INSERT KALI LINUX VM SCREENSHOT HERE -->
+
+1.3 Configure Kali Linux IP Settings
 
 Configured the IP settings for Kali Linux to operate within the lab network.
-
 The network interface and assigned IP address can be inspected using:
 
 ip addr
