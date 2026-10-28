@@ -206,9 +206,9 @@ Through this project, I gained practical experience in:
 - Checked the NAT Network configuration and network settings.
 - Used the following commands to troubleshoot connectivity:
 
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-sudo nmcli connection down "Wired connection 1"
-sudo nmcli connection up "Wired connection 1"
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0<br>
+sudo nmcli connection down "Wired connection 1"<br>
+sudo nmcli connection up "Wired connection 1"<br>
 
 <b>2. Android Network Configuration</b>
 
@@ -221,15 +221,15 @@ sudo nmcli connection up "Wired connection 1"
 
 - Configured the Kali Linux network interface using the following command:
 
-sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0 up
+  sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0 up
 
 - Added the default gateway:
 
-sudo ip route add default via 10.0.0.1 dev eth0
+  sudo ip route add default via 10.0.0.1 dev eth0
 
 - Tested connectivity to Android using:
 
-ping 10.0.0.9
+  ping 10.0.0.9
 
 ---
 
