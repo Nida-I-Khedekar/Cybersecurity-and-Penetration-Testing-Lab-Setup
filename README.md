@@ -83,7 +83,7 @@ Opened the web browser to verify network connectivity.
 Successfully searched for the entered query, confirming that the internet connection was working.
 
 
-<!-- INSERT KALI PING TEST SCREENSHOT HERE -->
+<img width="1280" height="686" alt="Image" src="https://github.com/user-attachments/assets/d25eb6f3-82c2-411f-845f-22d24c9d70cc" />
 
 
 1.5 Capture a Virtual Machine Snapshot
