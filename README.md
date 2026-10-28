@@ -56,7 +56,6 @@ Configuration:
 - Network type: NAT Network
 - Network address: "10.0.0.0/24"
 
-📸 Screenshot 1: NAT Network configuration
 
 <img width="1280" height="719" alt="Image" src="https://github.com/user-attachments/assets/69e94640-435a-4b7f-bad1-cd036aa5434f" />
 
@@ -66,7 +65,6 @@ Configuration:
 Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
 The VM was configured to connect to the previously created NAT Network.
 
-📸 Screenshot 2: Kali Linux virtual machine
 
 <img width="1280" height="669" alt="Image" src="https://github.com/user-attachments/assets/2fcc98b7-7aa9-481d-96dd-de273a5894a4" />
 
@@ -74,13 +72,9 @@ The VM was configured to connect to the previously created NAT Network.
 1.3 Configure Kali Linux IP Settings
 
 Configured the IP settings for Kali Linux to operate within the lab network.
-The network interface and assigned IP address can be inspected using:
 
-ip addr
 
-📸 Screenshot 3: Kali Linux IP configuration
-
-<!-- INSERT KALI IP CONFIGURATION SCREENSHOT HERE -->
+<img width="1280" height="678" alt="Image" src="https://github.com/user-attachments/assets/fb736d10-96b2-4562-b082-5034d1a5f95c" />
 
 
 1.4 Verify Network Connectivity
@@ -88,7 +82,6 @@ ip addr
 Opened the web browser to verify network connectivity.
 Successfully searched for the entered query, confirming that the internet connection was working.
 
-📸 Screenshot 4: Kali Linux connectivity test
 
 <!-- INSERT KALI PING TEST SCREENSHOT HERE -->
 
@@ -96,10 +89,8 @@ Successfully searched for the entered query, confirming that the internet connec
 1.5 Capture a Virtual Machine Snapshot
 
 Captured a snapshot of the configured Kali Linux virtual machine.
-
 A snapshot provides a restoration point that can be used to return the VM to its saved state when needed.
 
-📸 Screenshot 5: Kali Linux VM snapshot
 
 <!-- INSERT KALI SNAPSHOT SCREENSHOT HERE -->---
 
