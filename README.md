@@ -1,2 +1,324 @@
-# Cybersecurity-and-Penetration-Testing-Lab-Setup
-Hands-on cybersecurity labs covering Kali Linux, Android VM networking, and Wireshark traffic analysis.
+# 🛡️ Cybersecurity Lab Setup and Network Traffic Analysis
+
+A hands-on cybersecurity project involving virtual machine configuration, network connectivity testing, and Wireshark-based network traffic analysis.
+
+📌 Table of Contents
+
+1. Project Overview
+2. Objectives
+3. Tools and Technologies
+4. Kali Linux Setup and Configuration
+5. Android VM Setup and Configuration
+6. Wireshark Network Traffic Analysis
+7. Key Learnings
+8. Security and Ethical Considerations
+9. References
+10. Author
+
+📖 Project Overview
+
+This project focuses on setting up a virtual cybersecurity lab using Oracle VirtualBox, configuring Kali Linux and Android virtual machines, and performing network connectivity tests.
+
+The lab uses a NAT Network configured with the subnet "10.0.0.0/24". Kali Linux and Android are configured to communicate over this network, with Android assigned the static IP address "10.0.0.9".
+
+The project also includes six practical Wireshark exercises covering IP address identification, TCP stream analysis, HTTP plain-text credentials, brute-force activity, and VoIP traffic.
+
+🎯 Objectives
+
+- Configure a virtual cybersecurity lab using Oracle VirtualBox.
+- Install and configure Kali Linux.
+- Configure a NAT Network using "10.0.0.0/24".
+- Configure the Android VM with a static IP address.
+- Test connectivity between Kali Linux and Android.
+- Verify internet access using ping commands.
+- Capture a virtual machine snapshot.
+- Perform six Wireshark network traffic analysis exercises.
+
+🧰 Tools and Technologies
+
+Tool| Purpose
+Oracle VirtualBox| Virtual machine management
+Kali Linux| Linux environment and network testing
+Android-x86 9| Android virtual machine
+Wireshark| Network packet analysis
+NAT Network| Virtual machine networking
+Ping| Connectivity verification
+
+---
+
+🐉 Part 1: Kali Linux Setup and Configuration
+
+1.1 Configure the NAT Network
+
+Created a NAT Network in Oracle VirtualBox using the subnet "10.0.0.0/24".
+
+This network provides the virtual network environment for communication between Kali Linux and Android.
+
+Configuration:
+
+- Network type: NAT Network
+- Network address: "10.0.0.0/24"
+
+📸 Screenshot 1: NAT Network configuration
+
+<!-- INSERT NAT NETWORK CONFIGURATION SCREENSHOT HERE -->1.2 Install and Configure Kali Linux
+
+Installed and configured the Kali Linux virtual machine in Oracle VirtualBox.
+
+The VM was configured to connect to the previously created NAT Network.
+
+📸 Screenshot 2: Kali Linux virtual machine
+
+<!-- INSERT KALI LINUX VM SCREENSHOT HERE -->1.3 Configure Kali Linux IP Settings
+
+Configured the IP settings for Kali Linux to operate within the lab network.
+
+The network interface and assigned IP address can be inspected using:
+
+ip addr
+
+📸 Screenshot 3: Kali Linux IP configuration
+
+<!-- INSERT KALI IP CONFIGURATION SCREENSHOT HERE -->1.4 Verify Network Connectivity
+
+Performed ping tests to verify network connectivity within the virtual lab.
+
+The ping command was used to test whether the destination could be reached over the configured network.
+
+ping <destination-ip>
+
+📸 Screenshot 4: Kali Linux connectivity test
+
+<!-- INSERT KALI PING TEST SCREENSHOT HERE -->1.5 Capture a Virtual Machine Snapshot
+
+Captured a snapshot of the configured Kali Linux virtual machine.
+
+A snapshot provides a restoration point that can be used to return the VM to its saved state when needed.
+
+📸 Screenshot 5: Kali Linux VM snapshot
+
+<!-- INSERT KALI SNAPSHOT SCREENSHOT HERE -->---
+
+🤖 Part 2: Android VM Setup and Configuration
+
+2.1 Configure the Android VM Network
+
+Configured the Android virtual machine to use the same NAT Network as Kali Linux.
+
+Both VMs were connected to the shared network to enable connectivity testing between them.
+
+📸 Screenshot 6: Android VM using the shared NAT Network
+
+<!-- INSERT ANDROID NAT NETWORK SCREENSHOT HERE -->2.2 Configure a Static IP Address
+
+Configured the Android virtual machine with the following static IP address:
+
+Android IP Address: "10.0.0.9"
+
+The static IP address was configured to provide a consistent destination for connectivity testing from Kali Linux.
+
+📸 Screenshot 7: Android static IP configuration
+
+<!-- INSERT ANDROID STATIC IP SCREENSHOT HERE -->2.3 Test Android-to-Kali Connectivity
+
+Tested connectivity from Android to Kali Linux using the ping command.
+
+Kali Linux IP address: "10.0.0.2"
+
+Command:
+
+ping 10.0.0.2
+
+Result: Android-to-Kali connectivity was successfully tested.
+
+📸 Screenshot 8: Android pinging Kali Linux
+
+<!-- INSERT ANDROID TO KALI PING SCREENSHOT HERE -->2.4 Test Internet Connectivity from Android
+
+Verified internet connectivity from Android by pinging the public IP address "8.8.8.8".
+
+Command:
+
+ping 8.8.8.8
+
+Result: Internet connectivity was successfully tested using ping.
+
+📸 Screenshot 9: Android internet connectivity test
+
+<!-- INSERT ANDROID INTERNET PING SCREENSHOT HERE -->2.5 Test Kali-to-Android Connectivity
+
+Tested connectivity from Kali Linux to the Android virtual machine using the Android static IP address.
+
+Android IP address: "10.0.0.9"
+
+Command:
+
+ping 10.0.0.9
+
+Result: Connectivity was observed, with partial packet loss during the ping test.
+
+Partial packet loss indicates that some ICMP echo requests did not receive replies during the test. This result was documented rather than treating the test as completely loss-free.
+
+📸 Screenshot 10: Kali Linux pinging Android
+
+<!-- INSERT KALI TO ANDROID PING SCREENSHOT HERE -->2.6 Android Networking Results
+
+Test| Configuration or Command| Result
+Shared NAT Network| Same NAT Network as Kali Linux| Configured
+Static IP address| "10.0.0.9"| Configured
+Android-to-Kali| "ping 10.0.0.2"| Successful
+Android internet connectivity| "ping 8.8.8.8"| Successful
+Kali-to-Android| "ping 10.0.0.9"| Partial packet loss
+
+---
+
+🔍 Part 3: Wireshark Network Traffic Analysis
+
+Completed six practical Wireshark exercises to explore packet inspection, network protocols, and traffic investigation.
+
+Lab 1: Identify the Attacker's IP
+
+Objective
+
+Identify the source IP address associated with suspicious activity in the provided packet capture.
+
+Procedure
+
+1. Open the relevant capture file in Wireshark.
+2. Inspect the source and destination IP addresses.
+3. Investigate the traffic associated with the activity.
+4. Identify the IP address supported by the packet evidence.
+
+📸 Screenshot 11: Attacker IP identification
+
+<!-- INSERT WIRESHARK LAB 1 SCREENSHOT HERE -->Lab 2: Follow TCP Stream
+
+Objective
+
+Use Wireshark's Follow TCP Stream feature to reconstruct and inspect a TCP conversation.
+
+Procedure
+
+1. Open the relevant packet capture.
+2. Identify a TCP packet belonging to the communication.
+3. Right-click the packet.
+4. Select Follow → TCP Stream.
+5. Inspect the reconstructed conversation.
+
+📸 Screenshot 12: Follow TCP Stream
+
+<!-- INSERT WIRESHARK LAB 2 SCREENSHOT HERE -->Lab 3: Follow TCP Stream, Part 2
+
+Objective
+
+Continue TCP stream analysis using the capture associated with the second exercise.
+
+Procedure
+
+1. Open the relevant capture.
+2. Identify the TCP communication.
+3. Select Follow → TCP Stream.
+4. Examine the reconstructed conversation.
+5. Record the relevant observations.
+
+📸 Screenshot 13: Follow TCP Stream, Part 2
+
+<!-- INSERT WIRESHARK LAB 3 SCREENSHOT HERE -->Lab 4: HTTP Plain-Text Credentials
+
+Objective
+
+Investigate HTTP traffic to understand how unencrypted communication may expose sensitive information.
+
+Procedure
+
+1. Open the relevant packet capture.
+2. Identify HTTP requests and responses.
+3. Inspect packet details.
+4. Follow the associated TCP stream if appropriate.
+5. Document the security implications.
+
+📸 Screenshot 14: HTTP plain-text traffic analysis
+
+<!-- INSERT WIRESHARK LAB 4 SCREENSHOT HERE -->Security note: Redact credentials and other sensitive information before publishing screenshots.
+
+Lab 5: Brute Force Catch
+
+Objective
+
+Investigate captured traffic for patterns consistent with repeated authentication attempts.
+
+Procedure
+
+1. Open the relevant packet capture.
+2. Identify traffic associated with the authentication service.
+3. Examine repeated connection attempts or authentication requests.
+4. Inspect relevant packet details.
+5. Document the evidence.
+
+📸 Screenshot 15: Brute-force traffic investigation
+
+<!-- INSERT WIRESHARK LAB 5 SCREENSHOT HERE -->Lab 6: VoIP Call Replay
+
+Objective
+
+Inspect captured VoIP traffic to understand the protocols and packet flow associated with voice communication.
+
+Procedure
+
+1. Open the relevant packet capture.
+2. Identify the VoIP-related packets.
+3. Inspect packet details and communication flow.
+4. Examine available call-analysis or stream features.
+5. Document the observations.
+
+📸 Screenshot 16: VoIP traffic analysis
+
+<!-- INSERT WIRESHARK LAB 6 SCREENSHOT HERE -->---
+
+📚 Key Learnings
+
+Through this project, I gained practical experience in:
+
+- Virtual machine installation and configuration.
+- NAT Network configuration and IP addressing.
+- Kali Linux network interface configuration.
+- Android static IP configuration.
+- Bidirectional connectivity testing.
+- Internet connectivity verification using ping.
+- Virtual machine snapshot management.
+- Wireshark packet inspection and TCP stream analysis.
+- HTTP traffic security analysis.
+- Investigation of suspicious authentication activity.
+- VoIP traffic analysis.
+
+---
+
+🔐 Security and Ethical Considerations
+
+This project is intended for educational purposes and authorised lab environments.
+
+- Analyse only traffic you are authorised to inspect.
+- Redact credentials and sensitive information from screenshots.
+- Support technical conclusions with packet evidence.
+- Document connectivity test results accurately.
+
+---
+
+🔗 References
+
+- "Oracle VirtualBox" (https://www.virtualbox.org/)
+- "Kali Linux" (https://www.kali.org/)
+- "Android-x86" (https://www.android-x86.org/)
+- "Wireshark" (https://www.wireshark.org/)
+
+---
+
+👩‍💻 Author
+
+Nida Khedekar
+
+B.Sc. Information Technology | CCNA Qualified
+
+Interested in Network Engineering, Network Security, and Cybersecurity.
+
+"Connect on LinkedIn" (https://www.linkedin.com/in/nida-khedekar-614252349/)
