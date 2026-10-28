@@ -175,6 +175,10 @@ Investigate captured traffic for patterns consistent with repeated authenticatio
 Objective:<br>
 Inspect captured VoIP traffic to understand the protocols and packet flow associated with voice communication.
 
+<img width="1280" height="1280" alt="Image" src="https://github.com/user-attachments/assets/05b3310d-92c2-415e-9720-db5437b54cfe" />
+
+
+
 📚 Key Learnings
 
 Through this project, I gained practical experience in:
@@ -191,9 +195,45 @@ Through this project, I gained practical experience in:
 - Investigation of suspicious authentication activity.
 - VoIP traffic analysis.
 
+
 ---
 
-🔐 Security and Ethical Considerations
+<h2>Challenges Faced</h2>
+
+<b>1. Kali Linux Internet Connectivity</b>
+
+- Faced internet connectivity issues in the Kali Linux VM.
+- Checked the NAT Network configuration and network settings.
+- Used the following commands to troubleshoot connectivity:
+
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
+
+<b>2. Android Network Configuration</b>
+
+- Configured the Android VM to use the same NAT Network as Kali Linux.
+- Set the static IP address to "10.0.0.9".
+- Tested connectivity between Android and Kali Linux.
+- Verified internet connectivity using "ping 8.8.8.8".
+
+<b>3. Kali-to-Android Connectivity</b>
+
+- Configured the Kali Linux network interface using the following command:
+
+sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0 up
+
+- Added the default gateway:
+
+sudo ip route add default via 10.0.0.1 dev eth0
+
+- Tested connectivity to Android using:
+
+ping 10.0.0.9
+
+---
+
+<h2>Security and Ethical Considerations</h2>
 
 This project is intended for educational purposes and authorised lab environments.
 
@@ -204,7 +244,7 @@ This project is intended for educational purposes and authorised lab environment
 
 ---
 
-🔗 References
+<h2>References</h2>
 
 - "Oracle VirtualBox" (https://www.virtualbox.org/)
 - "Kali Linux" (https://www.kali.org/)
@@ -213,7 +253,7 @@ This project is intended for educational purposes and authorised lab environment
 
 ---
 
-👩‍💻 Author
+<h2>Author</h2>
 
 Nida Khedekar
 
