@@ -48,8 +48,7 @@ Ping| Connectivity verification
 
 <b>Step 1. Install 7-Zip</b>
 
-7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.
-
+7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a .7z archive.<br>
 Tool: 7-Zip
 
 <b>Step 2. Install VirtualBox</b>
@@ -112,12 +111,12 @@ A snapshot provides a restoration point that can be used to return the VM to its
 
 <b>Step 1: Create Virtual Machine</b>
 
-Created "Android9-Lab" in VirtualBox.
+Created "Android9-Lab" in VirtualBox.<br>
 Allocated 2 GB RAM and a 10 GB dynamically allocated virtual disk.
 
 <b>Step 2: Install Android</b>
 
-Attached the Android-x86 ISO.
+Attached the Android-x86 ISO.<br>
 Installed Android and configured the bootloader.
 
 <img width="1280" height="673" alt="Image" src="https://github.com/user-attachments/assets/cb8a0fc5-f63f-49f3-b568-09224c54502a" />
@@ -125,7 +124,7 @@ Installed Android and configured the bootloader.
 
 <b>Step 3: Configure Network</b>
 
-Connected Android to the same NAT Network as Kali Linux.
+Connected Android to the same NAT Network as Kali Linux.<br>
 Used the subnet "10.0.0.0/24".
 
 <b>Step 4: Configure Static IP</b>
