@@ -106,71 +106,42 @@ A snapshot provides a restoration point that can be used to return the VM to its
 
 
 
+
 ---
 <h2>Part 2: Android VM Setup and Configuration</h2>
 
-2.1 Configure the Android VM Network
+<b>Step 1: Create Virtual Machine</b>
 
-Configured the Android virtual machine to use the same NAT Network as Kali Linux.
+Created "Android9-Lab" in VirtualBox.
+Allocated 2 GB RAM and a 10 GB dynamically allocated virtual disk.
 
-Both VMs were connected to the shared network to enable connectivity testing between them.
+<b>Step 2: Install Android</b>
 
-📸 Screenshot 6: Android VM using the shared NAT Network
+Attached the Android-x86 ISO.
+Installed Android and configured the bootloader.
 
-<!-- INSERT ANDROID NAT NETWORK SCREENSHOT HERE -->2.2 Configure a Static IP Address
+<b>Step 3: Configure Network</b>
 
-Configured the Android virtual machine with the following static IP address:
+Connected Android to the same NAT Network as Kali Linux.
+Used the subnet "10.0.0.0/24".
 
-Android IP Address: "10.0.0.9"
+<b>Step 4: Configure Static IP</b>
 
-The static IP address was configured to provide a consistent destination for connectivity testing from Kali Linux.
+Set the Android IP address to "10.0.0.9".
 
-📸 Screenshot 7: Android static IP configuration
+<b>Step 5: Verify Connectivity</b>
 
-<!-- INSERT ANDROID STATIC IP SCREENSHOT HERE -->2.3 Test Android-to-Kali Connectivity
+Tested Android-to-Kali connectivity using "ping 10.0.0.2".
 
-Tested connectivity from Android to Kali Linux using the ping command.
 
-Kali Linux IP address: "10.0.0.2"
+Verified internet access using "ping 8.8.8.8".
 
-Command:
 
-ping 10.0.0.2
+Tested Kali-to-Android connectivity using "ping 10.0.0.9", with partial packet loss.
 
-Result: Android-to-Kali connectivity was successfully tested.
 
-📸 Screenshot 8: Android pinging Kali Linux
 
-<!-- INSERT ANDROID TO KALI PING SCREENSHOT HERE -->2.4 Test Internet Connectivity from Android
-
-Verified internet connectivity from Android by pinging the public IP address "8.8.8.8".
-
-Command:
-
-ping 8.8.8.8
-
-Result: Internet connectivity was successfully tested using ping.
-
-📸 Screenshot 9: Android internet connectivity test
-
-<!-- INSERT ANDROID INTERNET PING SCREENSHOT HERE -->2.5 Test Kali-to-Android Connectivity
-
-Tested connectivity from Kali Linux to the Android virtual machine using the Android static IP address.
-
-Android IP address: "10.0.0.9"
-
-Command:
-
-ping 10.0.0.9
-
-Result: Connectivity was observed, with partial packet loss during the ping test.
-
-Partial packet loss indicates that some ICMP echo requests did not receive replies during the test. This result was documented rather than treating the test as completely loss-free.
-
-📸 Screenshot 10: Kali Linux pinging Android
-
-<!-- INSERT KALI TO ANDROID PING SCREENSHOT HERE -->2.6 Android Networking Results
-
+---
 Test| Configuration or Command| Result
 Shared NAT Network| Same NAT Network as Kali Linux| Configured
 Static IP address| "10.0.0.9"| Configured
