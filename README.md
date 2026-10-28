@@ -32,16 +32,6 @@ The project also includes six practical Wireshark exercises covering IP address 
 - Capture a virtual machine snapshot.
 - Perform six Wireshark network traffic analysis exercises.
 
-🧰 Tools and Technologies
-
-Tool| Purpose
-Oracle VirtualBox| Virtual machine management
-Kali Linux| Linux environment and network testing
-Android-x86 9| Android virtual machine
-Wireshark| Network packet analysis
-NAT Network| Virtual machine networking
-Ping| Connectivity verification
-
 ---
 
 <h2>Part 1: Kali Linux Setup and Configuration </h2>
@@ -149,125 +139,41 @@ Tested Kali-to-Android connectivity using "ping 10.0.0.9".
 
 
 
-
-
----
-Test| Configuration or Command| Result
-
-Shared NAT Network| Same NAT Network as Kali Linux| Configured
-
-Static IP address| "10.0.0.9"| Configured
-
-Android-to-Kali| "ping 10.0.0.2"| Successful
-
-Android internet connectivity| "ping 8.8.8.8"| Successful
-
-Kali-to-Android| "ping 10.0.0.9"| Partial packet loss
-
 ---
 
-🔍 Part 3: Wireshark Network Traffic Analysis
+<h2>Part 3: Wireshark Network Traffic Analysis</h2>
 
 Completed six practical Wireshark exercises to explore packet inspection, network protocols, and traffic investigation.
 
-Lab 1: Identify the Attacker's IP
+<b>Lab 1: Identify the Attacker's IP</b>
 
-Objective
-
+Objective:<br>
 Identify the source IP address associated with suspicious activity in the provided packet capture.
 
-Procedure
+<b>Lab 2: Follow TCP Stream</b>
 
-1. Open the relevant capture file in Wireshark.
-2. Inspect the source and destination IP addresses.
-3. Investigate the traffic associated with the activity.
-4. Identify the IP address supported by the packet evidence.
-
-📸 Screenshot 11: Attacker IP identification
-
-<!-- INSERT WIRESHARK LAB 1 SCREENSHOT HERE -->Lab 2: Follow TCP Stream
-
-Objective
-
+Objective:<br>
 Use Wireshark's Follow TCP Stream feature to reconstruct and inspect a TCP conversation.
 
-Procedure
+<b>Lab 3: Follow TCP Stream, Part 2</b>
 
-1. Open the relevant packet capture.
-2. Identify a TCP packet belonging to the communication.
-3. Right-click the packet.
-4. Select Follow → TCP Stream.
-5. Inspect the reconstructed conversation.
-
-📸 Screenshot 12: Follow TCP Stream
-
-<!-- INSERT WIRESHARK LAB 2 SCREENSHOT HERE -->Lab 3: Follow TCP Stream, Part 2
-
-Objective
-
+Objective:<br>
 Continue TCP stream analysis using the capture associated with the second exercise.
 
-Procedure
+<b>Lab 4: HTTP Plain-Text Credentials</b>
 
-1. Open the relevant capture.
-2. Identify the TCP communication.
-3. Select Follow → TCP Stream.
-4. Examine the reconstructed conversation.
-5. Record the relevant observations.
-
-📸 Screenshot 13: Follow TCP Stream, Part 2
-
-<!-- INSERT WIRESHARK LAB 3 SCREENSHOT HERE -->Lab 4: HTTP Plain-Text Credentials
-
-Objective
-
+Objective:<br>
 Investigate HTTP traffic to understand how unencrypted communication may expose sensitive information.
 
-Procedure
+<b>Lab 5: Brute Force Catch</b>
 
-1. Open the relevant packet capture.
-2. Identify HTTP requests and responses.
-3. Inspect packet details.
-4. Follow the associated TCP stream if appropriate.
-5. Document the security implications.
-
-📸 Screenshot 14: HTTP plain-text traffic analysis
-
-<!-- INSERT WIRESHARK LAB 4 SCREENSHOT HERE -->Security note: Redact credentials and other sensitive information before publishing screenshots.
-
-Lab 5: Brute Force Catch
-
-Objective
-
+Objective:<br>
 Investigate captured traffic for patterns consistent with repeated authentication attempts.
 
-Procedure
+<b>Lab 6: VoIP Call Replay</b>
 
-1. Open the relevant packet capture.
-2. Identify traffic associated with the authentication service.
-3. Examine repeated connection attempts or authentication requests.
-4. Inspect relevant packet details.
-5. Document the evidence.
-
-📸 Screenshot 15: Brute-force traffic investigation
-
-<!-- INSERT WIRESHARK LAB 5 SCREENSHOT HERE -->Lab 6: VoIP Call Replay
-
-Objective
-
+Objective:<br>
 Inspect captured VoIP traffic to understand the protocols and packet flow associated with voice communication.
-
-Procedure
-
-1. Open the relevant packet capture.
-2. Identify the VoIP-related packets.
-3. Inspect packet details and communication flow.
-4. Examine available call-analysis or stream features.
-5. Document the observations.
-
-📸 Screenshot 16: VoIP traffic analysis
-
-<!-- INSERT WIRESHARK LAB 6 SCREENSHOT HERE -->---
 
 📚 Key Learnings
 
@@ -311,7 +217,7 @@ This project is intended for educational purposes and authorised lab environment
 
 Nida Khedekar
 
-B.Sc. Information Technology | CCNA Qualified
+B.Sc. Information Technology | CCNA | Network Engineer
 
 Interested in Network Engineering, Network Security, and Cybersecurity.
 
