@@ -113,7 +113,12 @@ A snapshot provides a restoration point that can be used to return the VM to its
 <b>Step 1: Create Virtual Machine</b>
 
 Created "Android9-Lab" in VirtualBox.
+
 Allocated 2 GB RAM and a 10 GB dynamically allocated virtual disk.
+
+<img width="1280" height="673" alt="Image" src="https://github.com/user-attachments/assets/cb8a0fc5-f63f-49f3-b568-09224c54502a" />
+
+
 
 <b>Step 2: Install Android</b>
 
@@ -143,10 +148,15 @@ Tested Kali-to-Android connectivity using "ping 10.0.0.9", with partial packet l
 
 ---
 Test| Configuration or Command| Result
+
 Shared NAT Network| Same NAT Network as Kali Linux| Configured
+
 Static IP address| "10.0.0.9"| Configured
+
 Android-to-Kali| "ping 10.0.0.2"| Successful
+
 Android internet connectivity| "ping 8.8.8.8"| Successful
+
 Kali-to-Android| "ping 10.0.0.9"| Partial packet loss
 
 ---
